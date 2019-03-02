@@ -1,0 +1,22 @@
+{
+    "scoreboardSpinner": {
+        "baseWidth": "${(@viewportShape == @viewportShapeRound ? viewport.width / 6 : (viewport.width > viewport.height ? viewport.height / 4 : viewport.width / 4))/6}",
+        "baseHeight": "${(@viewportShape == @viewportShapeRound ? viewport.width / 6 : (viewport.width > viewport.height ? viewport.height / 4 : viewport.width / 4))/4}",
+        "width": "${payload.scoreboardSpinner.baseWidth}",
+        "height": "${payload.scoreboardSpinner.baseHeight}",
+        "fontSize": "${payload.scoreboardSpinner.baseHeight}",
+        "valuesText": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "valuesImage": [
+            "https://via.placeholder.com/40x60.png?text=O",
+            "https://via.placeholder.com/40x60.png?text=1",
+            "https://via.placeholder.com/40x60.png?text=2",
+            "https://via.placeholder.com/40x60.png?text=3",
+            "https://via.placeholder.com/40x60.png?text=4",
+            "https://via.placeholder.com/40x60.png?text=5",
+            "https://via.placeholder.com/40x60.png?text=6",
+            "https://via.placeholder.com/40x60.png?text=7",
+            "https://via.placeholder.com/40x60.png?text=8",
+            "https://via.placeholder.com/40x60.png?text=9"
+        ]
+    }
+}

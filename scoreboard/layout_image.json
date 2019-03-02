@@ -1,0 +1,84 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [{
+        "name": "alexa-viewport-profiles",
+        "version": "1.0.0"
+    }, {
+        "name": "alexa-layouts",
+        "version": "1.0.0"
+    }],
+    "layouts": {
+        "ScoreBoardSpinner": {
+            "parameters": [{
+                "name": "name",
+                "type": "string"
+            }],
+            "items": [{
+                    "type": "Pager",
+                    "alignSelf": "center",
+                    "navigation": "none",
+                    "width": "${payload.scoreboardSpinner.width}",
+                    "height": "${payload.scoreboardSpinner.height}",
+                    "id": "${name}",
+                    "data": "${payload.scoreboardSpinner.valuesImage}",
+                    "items": [{
+                        "type": "Image",
+                        "source": "${data}",
+                        "width": "${payload.scoreboardSpinner.width}",
+                        "height": "${payload.scoreboardSpinner.height}",
+                        "scale": "best-fit",
+                        "align": "center"
+                    }]
+                }
+
+            ]
+
+        }
+    },
+    "resources": [],
+    "styles": {
+
+
+    },
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [{
+            "type": "Container",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "width": "100vw",
+            "direction": "row",
+            "items": [{
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner6"
+                },
+                {
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner5"
+                },
+                {
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner4"
+                },
+                {
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner3"
+                }, {
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner2"
+                }, {
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner1"
+                },
+                {
+                    "type": "ScoreBoardSpinner",
+                    "name": "scoreboardSpinner0"
+                }
+            ]
+        }]
+    }
+}
