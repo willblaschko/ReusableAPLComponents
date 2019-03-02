@@ -1,5 +1,7 @@
 # Reusable APL Components
 
+A collection of reusable APL (Alexa Presentation Language) components for building Alexa skills.
+
 Contents
 ----
 [Pager-Based Scoreboard](https://github.com/willblaschko/ReusableAPLComponents/tree/master/scoreboard)
